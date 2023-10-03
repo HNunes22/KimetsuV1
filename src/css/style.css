@@ -26,20 +26,22 @@ main .personagem.selecionado {
 main .personagem .imagem {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
+    object-fit: cover;    
 }
 
 .conteudo{    
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
- min-height: 100vh;
- max-width: 380px;
+ min-height: 80vh;
+ max-width: 500px;
  z-index: 1;
+ margin-left: 40px;
+ margin-top: 20px;
+ font-size: 19px;
 }
 
 .conteudo .nome-personagem{    
@@ -47,37 +49,41 @@ main .personagem .imagem {
     font-size: 48px;
     font-family: "Roboto";
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .conteudo .descricao {    
     color: white;
     font-family: "Sofia Sans";
-    line-height: 24px;
+    line-height: 30px;
+    
+    
 }
 
 .conteudo .logo {
 background-image: url("../imagens/kemetu.png");
-height: 190px;
-width: 200px;
+height: 140px;
+width: 150px;
 background-size: cover;
-margin-bottom: 20px;
+margin-bottom: 40px;
 
 }
 
 .botoes {
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    gap: 11px;
-    width: 150px;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    
+   flex-direction: row;
+    min-width: 70vw;
+    justify-content: space-between; 
+    gap: 30px;
+    height: 100px;
+    align-items: flex-end;
+    background-color: rgba(26, 16, 27, 0.3);
+   padding: 15px;
+    border-radius: 30px 0 0 30px;
+    margin-bottom: 10px;
 }
 
 .botoes .botao {
@@ -85,15 +91,16 @@ margin-bottom: 20px;
     background: #000000;
     cursor: pointer;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
     
 }
 
 .botoes .botao img {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
+    
 }
 
 .botoes .botao.selecionado {
@@ -105,19 +112,23 @@ margin-bottom: 20px;
 .botao-next {
     position: fixed;
     top: 0;
-    right: 3;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    width: 150px;
-    align-items: center;
+    right: 0;
+    width: 10px;
+   height: 10px;
+    margin-top: 30px;
+    margin-right: 80px;
+    border-radius: 50px;
     
 }
  .botao-next .next {
     border: none;
-    background: #00000000;
-    padding: 15px;
+    background: #0c050500;
     cursor: pointer;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
 }
+
+
 
 

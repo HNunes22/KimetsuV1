@@ -1,0 +1,134 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg,#000 40%, rgba(0, 0, 0, 0)65%) no-repeat;
+}
+
+
+main .personagem {
+display: none;
+height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.conteudo{    
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ min-height: 80vh;
+ max-width: 500px;
+ z-index: 1;
+ margin-left: 40px;
+ margin-top: 20px;
+ font-size: 19px;
+}
+
+.conteudo .nome-personagem{    
+    color: white;
+    font-size: 48px;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.conteudo .descricao {    
+    color: white;
+    font-family: "Sofia Sans";
+    line-height: 25px;
+    
+    
+}
+
+.conteudo .logo {
+background-image: url("../imagens/kemetu.png");
+height: 140px;
+width: 150px;
+background-size: cover;
+margin-bottom: 40px;
+
+}
+
+.botoes {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+   flex-direction: row;
+    min-width: 55vw;
+    justify-content: space-between; 
+    gap: 30px;
+    height: 100px;
+    align-items: flex-end;
+    background-color: rgba(26, 16, 27, 0.3);
+   padding: 15px;
+    border-radius: 30px 0 0 30px;
+    margin-bottom: 10px;
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.botao-next {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+   height: 10px;
+    margin-top: 30px;
+    margin-right: 80px;
+    border-radius: 50px;
+    
+}
+ .botao-next .next {
+    border: none;
+    background: #0c050500;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+
+
+

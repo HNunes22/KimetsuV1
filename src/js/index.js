@@ -1,6 +1,7 @@
 const botoes = document.querySelectorAll(".botao");
 const personagens = document.querySelectorAll(".personagem");
 
+
 botoes.forEach((botao, indice) => {
 botao.addEventListener("click", () => {
 
@@ -28,4 +29,6 @@ function desselecionarBotao() {
     }
   };
   
- 
+  document.getElementById("proximoButton").addEventListener("click", function() {
+    window.location.href = "http://127.0.0.1:5500/protas.html";
+});
